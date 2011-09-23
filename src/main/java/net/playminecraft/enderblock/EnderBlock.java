@@ -21,6 +21,7 @@ public class EnderBlock extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
+		entityListener = new EBEntityListener();
 		pm = getServer().getPluginManager();
 		name = this.getDescription().getName();
 		version = this.getDescription().getVersion();
